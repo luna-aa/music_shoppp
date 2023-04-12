@@ -1,0 +1,231 @@
+@charset "UTF-8";
+
+/* 
+#E7DEC8 - tan
+#F1EEE9 - white tan
+#7E8A97 - pastel navy
+#30475E - navy
+#15133C - dark navy
+#FD841F -  orange
+*/
+
+
+body {
+    background-color: #F1EEE9;
+    margin: 0;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+h2 {
+    text-align: center;
+    color: #4D4D4D;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+h3 {
+    text-align: center;
+    color: #30475E;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+.footer {
+    background-color: #E7DEC8;
+    position: relative;
+    height: 40px;
+    margin-top: -100px;
+    clear: both;
+    margin: 0;
+}
+
+
+/* - - - nav all across - - - */
+.navmain {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    background-color: #30475E;
+    padding: .3em;
+    margin: 0;
+}
+.navmain a {
+    color: white;
+    padding: 60px 40px;
+    text-decoration: none;
+}
+
+.navmain a:hover {
+    background-color: white;
+    color: rgb(57, 79, 94);
+}
+
+li.logo {
+    margin-right: auto;
+}
+
+/* - - - hero index - - - */
+.hero {
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(images/store.jpg);
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.hero_header {
+    text-align: left;
+    position: absolute;
+    color: white;
+    top: 40%;
+    text-shadow: .05em .05em .1em black;
+    font-size: 3em;
+    margin: 20px;
+}
+
+/* - - - album display - - - */
+.albums {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: .5em 1em;
+    margin: .5em;
+    justify-content: space-between;
+}
+
+.albums img:hover {
+    transform: scale(1.05);
+}
+
+.albums p {
+    text-align: center;
+}
+
+/* - - - hero concerts - - - */
+.hero_concert {
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(images/band.jpg);
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.hero_header_concert {
+    text-align: left;
+    position: absolute;
+    color: white;
+    top: 40%;
+    text-shadow: .05em .05em .1em black;
+    font-size: 3em;
+    margin: 20px;
+}
+
+.dl_list {
+    margin: .5em;
+}
+
+/* - - - concert table - - - */
+.concert_table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.concert_gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: .5em 1em;
+    margin: .5em;
+    justify-content: space-between;
+}
+.concert_gallery img:hover {
+    transform: scale(1.05);
+    opacity: 1;
+}
+
+/* - - - hero cart - - - */
+.hero_cart{
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(images/cash_register.jpg);
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.hero_header_cart {
+    text-align: left;
+    position: absolute;
+    color: white;
+    top: 40%;
+    text-shadow: .05em .05em .1em black;
+    font-size: 3em;
+    margin: 20px;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 100px 300px 300px 100px;
+    grid-template-areas: 
+    'internal  internal  internal  internal'
+    'hlight1   hlight1   hlight2   hlight2'
+    'hlight1   hlight1   hlight2   hlight2'
+    'about     about     about     about'
+    ;
+}
+
+.iteam1 {
+    grid-area: internal;
+    font-size: 20px;
+    text-align: left;
+}
+
+.iteam2 {
+    grid-area: hlight1;
+    font-size: 15px;
+    
+}
+
+.iteam3 {
+    grid-area: hlight2;
+    font-size: 15px;
+    text-align: center;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+
+.iteam5 {
+    grid-area: about;
+    font-size: 15px;
+    text-align: center;
+}
+
+/* - - - about - - - */
+.hero_about {
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(images/store_2.jpg);
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.hero_header_about {
+    text-align: left;
+    position: absolute;
+    color: white;
+    top: 40%;
+    text-shadow: .05em .05em .1em black;
+    font-size: 3em;
+    margin: 20px;
+} 
+
